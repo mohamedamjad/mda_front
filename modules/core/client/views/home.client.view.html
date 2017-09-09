@@ -1,0 +1,133 @@
+<section ng-controller="HomeController">
+<!--
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+        <img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/client/img/brand/logo.png" />
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <p class="lead">
+        Open-Source Full-Stack Solution For MEAN Applications
+      </p>
+    </div>
+    <div class="row">
+      <p>
+        <a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>
+      </p>
+    </div>
+  </div>
+  <div>
+-->
+    <!-- Debut de la map -->
+    <div class="container-fluid">
+      <div class="row">
+
+      <div class="col-sm-10">
+
+        <leaflet center="center" defaults="defaults" markers="markers" url-hash-center="yes" height="400">
+
+
+        </leaflet>
+
+      </div>
+      <div class="col-sm-2">
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            Liste des MDA
+          </a>
+          <a href="#" class="list-group-item">MDA-00001
+
+            <span class="label label-default">Offline</span>
+          </a>
+
+          <a href="#" class="list-group-item">MDA-00002
+            <span class="label label-success">Online</span>
+          </a>
+          <a href="#" class="list-group-item">MDA-00003
+            <span class="label label-success">Online</span>
+          </a>
+          <a href="#" class="list-group-item">MDA-00004
+            <span class="label label-default">Offline</span>
+          </a>
+          <a href="#" class="list-group-item">MDA-00005
+
+            <span class="label label-default">Offline</span>
+          </a>
+
+          <a href="#" class="list-group-item">MDA-00006
+            <span class="label label-success">Online</span>
+          </a>
+          <a href="#" class="list-group-item">MDA-00007
+            <span class="label label-success">Online</span>
+          </a>
+          <a href="#" class="list-group-item">MDA-00008
+            <span class="label label-default">Offline</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="row">
+          <div class="col-md-6">
+            <center>
+            <h4>Broadcatez un message synthétique</h4>
+            <p>
+              Votre message sera synthétisé à partir du texte saisi/choisi ci dessous
+            </p>
+          </center>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    Je choisi un texte prédéfini.
+              </label>
+              <div class="form-group">
+                <select class="form-control" id="exampleSelect1">
+                  <option>Le jardin ferme ses portes dans 30 min.</option>
+                </select>
+              </div>
+            </div>
+            <center>
+            <button type="button" class="btn btn-danger">Broadcaster
+              <span class="glyphicon glyphicon-volume-up"></span>
+            </button>
+          </center>
+            </div>
+
+          <div class="col-md-6">
+            <center>
+            <h4>Broadcatez un message vocal</h4>
+            <p>Utilisez le microphone pour broadcaster un message vocal à l'ensemble des MDA</p>
+            <p>Maintenez le boutton cliqué jusqu'à la fin de l'enregistrement de votre message</p>
+            <button type="button" class="btn btn-danger">Broadcaster
+              <span class="glyphicon glyphicon-volume-up"></span>
+            </button>
+          </center>
+          </div>
+        </div>
+
+    </div>
+
+     </div>
+
+     <!--
+     <div>
+
+     <form class="text-center">
+     Latitude :
+     <input type="number" step="any" ng-model="center.lat"> Longitude :
+     <input type="number" step="any" ng-model="center.lng"> Zoom :
+     <input type="number" step="any" ng-model="center.zoom">
+     </form>
+
+
+    </div>-->
+
+    <!-- FIN DE LA MAP -->
+
+  </div>
+
+</section>
